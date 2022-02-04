@@ -1,0 +1,18 @@
+name: CiCd Test Demo
+on: [push]
+jobs:
+  build:
+  name: Linting project
+  runs-on: ubuntu-latest
+  steps:
+    - run: echo "testing linting of the application..."
+    - run: echo "runner: ${{ runner.os }}"
+    - run: echo "branch name: ${{ github.ref }}"
+    - name: Checkout repository
+      uses: actions/checkout@v2
+    - run: echo "Repo ${{ github.repository }} has been cloned to the runner..."
+    - run: echo "Workflow ready to test..."
+    - name: List files in repo
+      run: |
+        ls ${{ github.workspace }}
+    - run: echo "job status: ${{ job.status }}..."
