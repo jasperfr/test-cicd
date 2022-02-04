@@ -5,11 +5,12 @@ jobs:
     name: Linting
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Running linting test on the application..."
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
         with:
           node-version: '14'
       - run: |
           npm install
+      - run: |
+          echo "Starting the linting test."
           npm run lint
