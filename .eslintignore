@@ -9,3 +9,6 @@ dist
 
 # do not lint jest configuration file
 jest.config.js
+
+# do not lint webpack configuration file
+webpack.config.js
