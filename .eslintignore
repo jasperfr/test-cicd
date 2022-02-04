@@ -1,5 +1,11 @@
-# don't ever lint node_modules
+# do not lint node_modules
 node_modules
-# don't lint build output (make sure it's set to your correct build folder name)
+
+# do not lint build output
 dist
+
+# do not lint eslintrc
 .eslintrc.js
+
+# do not lint jest configuration file
+jest.config.js
