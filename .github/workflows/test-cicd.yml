@@ -2,7 +2,7 @@ name: CiCd Test Demo
 on: [push]
 jobs:
   build:
-  name: Linting project
+  name: Linting
   runs-on: ubuntu-latest
   steps:
     - run: echo "testing linting of the application..."
